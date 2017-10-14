@@ -1,0 +1,22 @@
+<div class="col-md-6 col-md-offset-3">
+	<h2>Update Details Page</h2>
+	<form>
+		<div class="form-group">
+			<label for="firstName">First Name</label> <input type="text"
+				class="form-control" name="firstName"
+				[(ngModel)]="currentUser.firstName" />
+		</div>
+		<div class="form-group">
+			<label for="lastName">Last Name</label> <input type="text"
+				class="form-control" name="lastName"
+				[(ngModel)]="currentUser.lastName" />
+		</div>
+		<div class="form-group">
+			<label for="username">Last Name</label> <input type="text"
+				class="form-control" name="username"
+				[(ngModel)]="currentUser.username" />
+		</div>
+		<span class="btn btn-primary">Update</span> <span
+			class="btn btn-danger" (click)="goToHome()">Back</span>
+	</form>
+</div>
